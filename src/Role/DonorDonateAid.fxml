@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Role.DonorDonateAidController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1024.0" style="-fx-background-color: #bb86fc;">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/donor.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DONATE AID" textAlignment="CENTER" wrappingWidth="159.0">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="284.0" layoutY="192.0" prefHeight="237.0" prefWidth="457.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 5px;">
+         <children>
+            <Button alignment="CENTER" layoutX="46.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnDonateClicked" prefHeight="37.0" prefWidth="366.0" style="-fx-background-color: #bb86fc; -fx-background-radius: 10;" text="Donate" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtAidName" layoutX="102.0" layoutY="44.0" prefHeight="37.0" prefWidth="310.0" promptText="Aid Name" style="-fx-background-color: #1e1e1e; -fx-border-color: #bb86fc; -fx-border-width: 2.5px; -fx-border-radius: 20; -fx-text-fill: #ffffff;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAidQuantity" layoutX="102.0" layoutY="100.0" prefHeight="37.0" prefWidth="310.0" promptText="Aid Quantity" style="-fx-background-color: #1e1e1e; -fx-border-color: #bb86fc; -fx-border-width: 2.5px; -fx-border-radius: 20; -fx-text-fill: #ffffff;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="48.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/donor-icons8-tag.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="48.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/donor-icons8-quantity.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #121212; -fx-background-radius: 7px 7px 0px 0px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Role.DCPriorityModeController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1024.0" style="-fx-background-color: #3700b3;">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/dc-icons8-priority_white.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="PRIORITY MODE" textAlignment="CENTER" wrappingWidth="202.0">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button alignment="CENTER" layoutX="628.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnEnqueueClicked" prefHeight="28.0" prefWidth="135.0" style="-fx-background-color: #03dac6; -fx-background-radius: 10;" text="ENQUEUE" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/dc-icons8-enqueue.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" layoutX="262.0" layoutY="469.0" mnemonicParsing="false" onAction="#btnDequeueClicked" prefHeight="45.0" prefWidth="501.0" style="-fx-background-color: #cf6679; -fx-background-radius: 10;" text="DEQUEUE" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/dc-icons8-dequeue.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ChoiceBox fx:id="ngoChoiceBox" layoutX="262.0" layoutY="136.0" opacity="0.9" prefHeight="45.0" prefWidth="349.0" style="-fx-background-radius: 10;" />
+      <ListView fx:id="ngoQueueListView" layoutX="262.0" layoutY="272.0" opacity="0.8" prefHeight="172.0" prefWidth="501.0" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+Rice,10,D1,N1,Collected
+Rice,5,D2,N2,Reserved
+Rice,15,D3,N2,Reserved
+Rice,25,D4,N3,Collected
+Rice,10,D4,N4,Reserved
+Rice,5,D4,N5,Collected
+Brain,4,D7,N7,Collected
+Banana,4,D7,N7,Collected
+Rice,10,D4,-,Available
+Banana,1,D7,-,Available
+Brain,5,D7,-,Available

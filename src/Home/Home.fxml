@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1024.0" style="-fx-background-color: #1e1e1e;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/home.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AID DISTRIBUTION SYSTEM" textAlignment="CENTER" wrappingWidth="339.0">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button alignment="CENTER" layoutX="90.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToDonorLogin" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #bb86fc; -fx-background-radius: 10;" text="DONOR" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/donor.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" layoutX="715.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToNGOLogin" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #03dac6; -fx-background-radius: 10;" text="NGO" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/non-profit-organiasation.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" layoutX="330.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToDC" prefHeight="200.0" prefWidth="364.0" style="-fx-background-color: #3700b3; -fx-background-radius: 10;" text="DISTRIBUTION CENTER" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="25.0">
+               <image>
+                  <Image url="@../resources/icons/distribution-center.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fill="#d0d0d0" layoutX="116.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donate aid to the Distribution Center." textAlignment="CENTER" wrappingWidth="169.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#d0d0d0" layoutX="733.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request aid from the Distribution Center." textAlignment="CENTER" wrappingWidth="183.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#d0d0d0" layoutX="381.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Match and view aid donated by the Donor, to the NGOs." textAlignment="CENTER" wrappingWidth="270.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
